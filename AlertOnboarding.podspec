@@ -3,10 +3,10 @@ s.name             = "AlertOnboarding"
 s.version          = "1.9.1"
 s.summary          = "AlertOnboarding"
 s.description      = "A simple and handsome AlertView for onboard your users in your amazing world."
-s.homepage         = "https://github.com/PhilippeBoisney/AlertOnboarding"
+s.homepage         = "https://github.com/loevdahl/AlertOnboarding"
 s.license          = 'MIT'
 s.author           = { "PhilippeBoisney" => "phil.boisney@gmail.com" }
-s.source           = { :git => "https://github.com/PhilippeBoisney/AlertOnboarding.git", :tag => s.version }
+s.source           = { :git => "https://github.com/loevdahl/AlertOnboarding.git", :tag => s.version }
 s.platform     = :ios, '8.0'
 s.requires_arc = true
 
