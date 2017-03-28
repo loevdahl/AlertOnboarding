@@ -134,7 +134,7 @@ open class AlertOnboarding: UIView, AlertPageViewDelegate {
     fileprivate func configure(_ arrayOfImage: [String], arrayOfTitle: [String], arrayOfDescription: [String]) {
         
         self.buttonBottom = UIButton(frame: CGRect(x: 0,y: 0, width: 0, height: 0))
-        self.buttonBottom.titleLabel?.font = UIFont(name: "Avenir-Black", size: 15)
+        self.buttonBottom.titleLabel?.font = .systemFont(ofSize: 15)
         self.buttonBottom.addTarget(self, action: #selector(AlertOnboarding.onClick), for: .touchUpInside)
         
         self.background = UIView(frame: CGRect(x: 0,y: 0, width: 0, height: 0))
