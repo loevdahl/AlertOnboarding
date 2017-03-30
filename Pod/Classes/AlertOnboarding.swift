@@ -194,14 +194,15 @@ open class AlertOnboarding: UIView, AlertPageViewDelegate {
     fileprivate func animateForOpening(){
         self.alpha = 1.0
         self.transform = CGAffineTransform(scaleX: 0.3, y: 0.3)
-        UIView.animate(withDuration: 1, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: [], animations: {
+        UIView.animate(withDuration: 1, delay: 0.0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.4, options: [], animations: {
             self.transform = CGAffineTransform(scaleX: 1, y: 1)
             }, completion: nil)
     }
     
     fileprivate func animateForEnding(){
-        UIView.animate(withDuration: 0.2, delay: 0.0, options: UIViewAnimationOptions.curveEaseOut, animations: {
+        UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveLinear, animations: {
             self.alpha = 0.0
+            self.background.alpha = 0
             }, completion: {
                 (finished: Bool) -> Void in
                 // On main thread
